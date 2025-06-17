@@ -87,7 +87,7 @@ def main():
                                 "recibe": persona.get("recibe", [])
                             }
                         }
-                        print(json.dumps(data, ensure_ascii=False, indent=2))
+                        #print(json.dumps(data, ensure_ascii=False, indent=2))
                         send_report(config["backend_url"], data)
                         
             # Directores
@@ -105,7 +105,7 @@ def main():
                             "recibe": director.get("recibe", [])
                         }
                     }
-                    print(json.dumps(data, ensure_ascii=False, indent=2))
+                    #print(json.dumps(data, ensure_ascii=False, indent=2))
                     send_report(config["backend_url"], data)
 
 if __name__ == "__main__":
