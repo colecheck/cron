@@ -1,0 +1,44 @@
+base_url: "http://colecheck.com/api"
+#backend_url: "http://localhost:3000/wapp-web/class-attendance-report"
+backend_url: "http://157.230.81.198:3000/wapp-web/class-attendance-report"
+schools:
+  - slug: "ie-san-martin-de-porres-circa"
+    name: "IE San Martín de Porres Circa"
+    recipients:
+      primaria:
+        profesores: []
+        auxiliares:
+          - nombre: "Aux Primaria"
+            email: "maria.lopez@colegio.com"
+            telefono: "963828458"
+            recibe: ["primaria"]
+      secundaria:
+        profesores:
+          - nombre: "Aux secundaria"
+            email: "luis.ramos@colegio.com"
+            telefono: "963828458"
+            recibe: ["secundaria"]
+      directores:
+        - nombre: "Director"
+          email: "director@colegio.com"
+          telefono: "963828458"
+          recibe: ["primaria", "secundaria"]
+
+  - slug: "institucion-educativa-particular-nanterre"
+    name: "IEP Nanterre"
+    recipients:
+      primaria:
+        profesores: []
+        auxiliares: []
+      secundaria:
+        profesores: []
+        auxiliares:
+          - nombre: "Aux Secundaria"
+            email: "rosa.salas@nanterre.com"
+            telefono: "963828458"
+            recibe: ["secundaria"]
+      directores:
+        - nombre: "Directora Nanterre"
+          email: "directora@nanterre.com"
+          telefono: "963828458"
+          recibe: ["primaria", "secundaria"]
