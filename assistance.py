@@ -1,10 +1,12 @@
+import os
 import requests
 import yaml
 from collections import defaultdict
 from datetime import date
 import json
 
-def load_config(path="config.yml"):
+def load_config():
+    path = os.path.join(os.path.dirname(__file__), "config.yml")
     with open(path, "r") as f:
         return yaml.safe_load(f)
 
